@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strokeBg {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    min-height: 93vh;
+
+    border: 2px solid #f1f1f1;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 20px 30px;
+}
+
+.logoGabriel {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 130px;
+    width: 20%;
+    min-width: 100px;
+}
+
+.strokeContainer {
+    width: 90%;
+    max-width: 600px;
+    min-width: 0;
+    min-height: 70vh;
+
+    border: 2px solid #f1f1f1;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.strokeContainer h1 {
+    font-family: Autography;
+    font-size: clamp(28px, 5vw, 60px);
+    font-weight: 100;
+    color: #f1f1f1;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputArea {
+    width: 100%;
+    max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputArea label {
+    color: #f1f1f1;
+    font-family: Montserrat;
+}
+
+.inputArea input,
+.inputArea textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Montserrat;
+
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+
+    background-color: transparent;
+    color: #f1f1f1;
+}
+
+.inputArea textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.inputArea button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #f1f1f1;
+    transition: 0.5s ease;
+
+    
+}.inputArea button:hover{
+    background-color: transparent;
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+
+    .strokeBg {
+        width: 96%;
+        padding: 90px 10px 20px;
+    }
+
+    .strokeContainer {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .strokeContainer h1 {
+        font-size: clamp(25px, 7vw, 34px);
+    }
+
+    .logoGabriel {
+        width: 100px;
+    }
+}

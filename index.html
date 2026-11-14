@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Projeto logo gabriel com fundo-02.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Envie seu Email!</title>
+</head>
+<body>
+    <div class="strokeBg">
+
+        <img src="/img/Projeto logo gabriel com fundo-02.png"
+             class="logoGabriel">
+
+        <div class="strokeContainer">
+
+            <h1>Me Mande um Email!</h1>
+
+            <form action="https://formsubmit.co/gabrielcarvalho09012008@gmail.com" method="POST" class="inputArea">
+
+                <label for="nome">Seu Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Seu Email:</label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                <button type="submit" >Enviar</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
